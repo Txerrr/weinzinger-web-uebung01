@@ -34,6 +34,26 @@
         <img src="fabian.png" alt="Freies Bild" width="300">
         <figcaption>Mein Bild</figcaption>
     </figure>
+    <figure>
+        <img 
+            src="NicoWeinzinger.png"
+            alt="Freies Bild" 
+            title="Freies Bild"
+            width="400">
+        <figcaption>CC-lizenziertes Bild</figcaption>
+    </figure>
+
+     <script>
+        const hobbys = ["Gaming", "Fußball", "Musik hören", "Nico Weinzinger"];
+
+        const liste = document.getElementById("liste-hobbys");
+
+        hobbys.forEach(h => {
+            let li = document.createElement("li");
+            li.textContent = h;
+            liste.appendChild(li);
+        });
+    </script>
 
 </body>
 </html>
